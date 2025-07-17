@@ -6,17 +6,22 @@
   <title>Timer</title>
   <link rel="stylesheet" href="boxicons.min.css">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link href="/dist/styles.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
-     <div class="bg-white p-8 rounded-lg shadow-lg w-96">
-     <div class="text-5xl item-center text-center mb-4" id="time">00:00.00</div>
-    <div class="flex justify-center space-x-4">
-        <button id="start" class="bg-blue-500 text-white px-4 py-4 rounded hover:bg-blue-600">Start</button>
-        <button id="stop" class="bg-red-500 text-white px-4  py-4   rounded hover:bg-red-600">Stop</button>
-        <button id="reset" class="bg-gray-500 text-white px-4  py-4  rounded hover:bg-gray-600">Reset</button>
+    
+     <div class="bg-white p-8 rounded-3xl shadow-2xl w-[80%] max-w-lg">
+     <div class="text-5xl text-gray-700 text-semibold item-center text-center mb-4" id="time">00:00.00</div>
+     <div class="flex justify-center space-x-4">
+        <button id="start" class="bg-blue-500 text-white px-4 py-4 rounded  hover:bg-blue-600" id="start">Start</button>
+        <button id="stop" class="bg-red-500 text-white px-4  py-4   rounded hover:bg-red-600" id="stop">Stop</button>
+        <button id="reset" class="bg-gray-500 text-white px-4  py-4  rounded hover:bg-gray-600" id="reset">Reset</button>
         </div>
-    <body class="bg-green-300 flex items-center justify-center h-screen">
+    <body class="bg-green-300 flex items-center justify-center min-h-screen">
     <header class="flex item-center justify-center">
         <h1 class="text-xl md:text-2xl font-semibold mt-4">STOPWATCH</h1>
+    
     </header>
     </body>
+
+    <script src="index.js"></script>
